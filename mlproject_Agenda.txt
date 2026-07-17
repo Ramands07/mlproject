@@ -1,0 +1,22 @@
+# Agenda for the ML project
+-> Will create step by step process how to create a professional way of project
+
+### SET UP A REPOSITORY IN GITHUB - after creating the repository create below things
+  a) create new ENVIRONMENT
+  b) setup.py
+  c) requirement.txt
+  d) src(source) folder and build packages
+
+
+
+
+
+1. Data Ingestion
+2. Data Transformation
+3. Model Trainer
+4. Model Evaluation
+5. Model Deployement
+
+CI/CD pipeline - GITHUB
+Deployement - AWS
+

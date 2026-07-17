@@ -1,0 +1,50 @@
+FULL PROCESS HOW TO SETUP EVERTHING IN VSCODE END TO END
+
+create a new terminal and choose any base or something
+then to create the ENVIRONMENT need to this steps -
+
+conda create -p venv python==3.8 -y                    #--------> first step to do the environment creation process
+conda create -p ./venv python=3.8 -y                   ---------->> for better approch use this - This explicitly creates the environment in the current project directory.
+                { conda info                            ----> if python version get some error do check the version
+                conda update -n base -c defaults conda  ----> update the version
+                conda create -p ./venv python==3.8 -y }
+
+conda create -n ds_project python=3.8 -y          -----> Instead of creating an environment by path (-p), create it by name:
+
+
+conda activate venv/                              -------> to activate the environment need to do this as next step
+conda activate ds_project                         -------> to activate the environment need to do this as next step if you are given any name
+
+
+# Once this environment setup is done will commit it to GITHUB process -
+create a new repository on the command line
+echo "# mlproject" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+git branch -M main
+git remote add origin https://github.com/Ramands07/mlproject.git
+git remote -v
+git push -u origin main
+
+
+Afte the commit will create .gitignore in github itself by creating new file.
+write git pull                                  ----------> for full update
+
+
+
+# Now will move it to setup.py and requirments.txt process
+setup.py  ------->> it is basically used to create the package and will be using this for ML and other project can also be used.
+
+     for this create a new source folder "src" .A source which found it as a package
+     under this source will create __init__.py which tell in how many source init is there. and all the project development will be in this only.
+
+
+
+NOW RUN THE CODE IN terminal
+pip install -r requirments.txt
+
