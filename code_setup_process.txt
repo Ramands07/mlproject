@@ -48,3 +48,30 @@ setup.py  ------->> it is basically used to create the package and will be using
 NOW RUN THE CODE IN terminal
 pip install -r requirments.txt
 
+>>> after all the installing and source code added - do this next step - git add .  , then check git status
+
+
+==========================================================================================================================
+# Now we will be implementing Project Structure ,Logging and Exception Handling
+
+first will create another folder inside the src ---> COMPONEMENT
+
+COMPONEMENT (COMPONEMENT are nothing but module that specifically we are going to use in our projects) ===> 1. __init__.py
+                                                                                                            2. data_ingestions.py        ---------- here all the data will be ingested to find the model
+                                                                                                            3. data_transformation.py        ------ al the transformation will happen here.
+                                                                                                            4. model_trainer.py       
+
+
+                                                 ---> PIPELINE  =========> 1. __init__.py
+                                                                           2. predict_pipeline.py
+                                                                           3. train_pipeline.py
+
+                                                --------> Also add exception.py , logger.py .utlis.py in SRC with others.
+
+
+
+[[  to run any particular file in terminal use :-  python src/logger.py       ---Jus a sample example                ]]
+
+
+
+
